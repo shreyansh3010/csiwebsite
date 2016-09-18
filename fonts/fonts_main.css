@@ -1,0 +1,60 @@
+@font-face {
+    font-family: HelveticaNeueLt27;
+    src: url("../fonts/Helvetica_Lt.ttf");
+}
+
+@font-face {
+    font-family: OpenSansL;
+    src: url("../fonts/Open Sans Light.ttf");
+}
+
+@font-face {
+    font-family: OpenSansSB;
+    src: url("../fonts/Open Sans Semibold.ttf");
+}
+
+@font-face {
+    font-family: OpenSansR;
+    src: url("../fonts/OpenSansHebrew-Regular.ttf");
+}
+
+@font-face {
+    font-family: Lato_bold;
+    src: url("../fonts/Lato/lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: Lato_light;
+    src: url("../fonts/Lato/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: Lato_semibold;
+    src: url("../fonts/Lato/Lato-Semibold.ttf");
+}
+
+@font-face {
+    font-family: Lato_thin;
+    src: url("../fonts/Lato/Lato-Thin.ttf");
+}
+
+@font-face {
+    font-family: Lato_thinitalic;
+    src: url("../fonts/Lato/Lato-ThinItalic.ttf");
+}
+
+@font-face {
+    font-family: Lato_medium;
+    src: url("../fonts/Lato/Lato-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'typicons';
+  src: url("../bower_components/typicons.font/src/font/typicons.eot");
+  src: url("../bower_components/typicons.font/src/font/typicons.eot?#iefix") format('embedded-opentype'),
+    url("../bower_components/typicons.font/src/font/typicons.woff") format('woff'),
+       url("../bower_components/typicons.font/src/font/typicons.ttf") format('truetype'),
+       url("../bower_components/typicons.font/src/font/typicons.svg#typicons") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
