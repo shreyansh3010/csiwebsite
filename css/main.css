@@ -170,13 +170,10 @@ body, html {
     margin-left: -1800px; } }
 
 #main {
-  height: 1080px;
   max-width: 100%;
   max-height: auto;
-  background: #fff;}
-  #main .whenwebuild_text {
-    height: 240px;
-    width: 697px; }
+  background: #fff;
+  height:100vh;}
   #main svg path {
     stroke: #fff;
     stroke-width: 3;
@@ -265,6 +262,22 @@ body, html {
     transform: translateX(-1.75px) translateY(1.75px); }
   100% {
     transform: translateX(0) translateY(0); } }
+
+#main .head_title h2{
+  color: #0f0f0f;
+}
+
+.head_title h1{
+  padding: 25% 0 40px 0;
+  font-size: 6.7em;
+  font-family: Lato_bold;
+  color: #f7f7f7;
+}
+
+.head_title h3{
+  font-family: Lato_thinitalic;
+  color: #1a1a1a;
+}
 
 /*=======================
 *PROJECTS
@@ -948,7 +961,7 @@ SVG STTYLES
 MEDIA QUERIES
 =================================*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .csi_type svg {
+  .csi_type img {
     width: 40%; }
   #Layer_2 {
     position: absolute;
@@ -1034,4 +1047,49 @@ New CSS
 
 .cp_backdrop{
   height:80vh;
+}
+
+a:hover, a:active, a:focus{
+  text-decoration: none;
+}
+
+@media only screen and (max-device-width: 715px) {
+  .head_title h1{
+    padding: 50% 0 40px 0;
+    font-size: 4em;
+    font-family: Lato_bold;
+    color: #f7f7f7;
+  }
+
+  .head_title h2{
+    padding-top: 30px;
+    font-family: Lato_thin;
+    color: #1a1a1a;
+    font-size: 1.8em;
+  }
+}
+
+@media only screen and (max-device-width: 450px) {
+  #main{
+    height:125vh;
+  }
+  .csi_type img {
+    width: 35%; }
+  .head_title h1{
+    padding: 25vh 0 40px 0;
+    font-size: 2.4em;
+    font-family: Lato_bold;
+    color: #f7f7f7;
+  }
+
+  .head_title h2{
+    font-family: Lato_thin;
+    color: #1a1a1a;
+    font-size: 1.3em;
+  }
+
+  .head_title h3{
+    color: #1a1a1a;
+    font-size: 0.9em;
+  }
 }

@@ -33,12 +33,12 @@ $(function() {
     }
   });
 });
-
+/*
 $("a[href='#top']").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
   return false;
 });
-
+*/
 //Esc to close the nav
 $(document).keyup(function(e) {
 if (e.keyCode == 27) {
@@ -80,4 +80,12 @@ $(document).ready(function () {
         $('#wrapper').toggleClass('toggled');
   });  
 });
+
+var shine = new Shine(document.getElementById('my-shine-object'));
+
+window.addEventListener('mousemove', function(event) {
+  shine.light.position.x = event.clientX;
+  shine.light.position.y = event.clientY;
+  shine.draw();
+}, false);
 
