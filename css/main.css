@@ -131,7 +131,7 @@ body, html {
 *BACKGROUND
 =================================================*/
 .bg-main {
-  background: #74ddf4;
+  background: #A5EAFF;
   position: fixed;
   top: 0;
   right: 0;
@@ -173,6 +173,10 @@ body, html {
   max-width: 100%;
   max-height: auto;
   background: #fff;
+  background-image: url("../img/Line.svg");
+  background-size: contain;
+  background-position: center ;
+  background-repeat: no-repeat;
   height:100vh;}
   #main svg path {
     stroke: #fff;
