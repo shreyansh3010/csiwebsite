@@ -42,19 +42,18 @@
     
 <!-- Sidebar -->
         <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-           <span class=""></span>
             <ul class="nav sidebar-nav">
                 <li>
-                    <a href="#main">Home</a>
+                    <a class="menu-trigger" href="#main" name="main" data-toggle="offcanvas">Home</a>
                 </li>
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a class="menu-trigger" href="#projects" name="projects" data-toggle="offcanvas">Projects</a>
                 </li>
                 <li>
-                    <a href="#events">Events</a>
+                    <a class="menu-trigger" href="#events" data-toggle="offcanvas">Events</a>
                 </li>
                 <li>
-                    <a href="#profile">Team</a>
+                    <a class="menu-trigger" href="#profile" data-toggle="offcanvas">Team</a>
                 </li>
                 <li>
                     <a href="https://csivit.com/blog">Blog</a>
@@ -77,27 +76,25 @@
                 <a href="mailTo:info@csivit.com">
                     <span class="typcn typcn-social-at-circular" target="_blank"></span>   
                 </a>
-                </li> </div>
-                </ul>
                 </li>
+                </div>
+            </ul>
 
            
             <div class="row-fluid side_footer">
+                <div><p>Holding the <span>VISION.</span></p></div>
 
-		
-		<div><p>Holding the <span>VISION.</span></p></div>
-		
-		<p>© 2016 <a href="#main">Computer Society of India</a>
-		<p>VIT University Student Branch</p>
+                <p>© 2016 <a href="#main">Computer Society of India</a>
+                <p>VIT University Student Branch</p>
             </div>
         </nav>
 
 <div id="page-content-wrapper">
-<button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+<button type="button" class="hamburger is-closed animated fadeInLeft menu-trigger" data-toggle="offcanvas">
             <span class="hamb-top"></span>
             <span class="hamb-middle"></span>
             <span class="hamb-bottom"></span>
-          </button>
+</button>
 <div class="csi_type">
 <img src="img/typeface-black.svg">
 </div>
@@ -139,7 +136,7 @@
         <h3>We don't play softball.</h3>
         <br>
         <br>
-        <a href="#projects">SCROLL DOWN</a>
+        <a class="scroll_down" href="#projects">SCROLL DOWN</a>
 
  <!--
   <svg
@@ -606,11 +603,23 @@
    <div class="container">
         <div class="row cp_backdrop">
         <div class="col-xs-10 col-xs-offset-1 text-center cp_head">
-            <h1>CODEPLAY</h1>
-            <h2>Learn, build and explore software and hardware with participants from all domains.</h2>
+            <h1 class="codeplay_title">CODEPLAY</h1>
+            <h2 class="codeplay_subtitle">
+                Learn, build and explore software and hardware with participants from all domains. <br>
+                A national level hackathon that enables the thinkers and doers to reach out to certain communities which suffer from lack of basic amenities, with an
+                aim to hone technology and creativity.
+                <br>
+                Visit <a href="https://codeplay.csivit.com">codeplay.csivit.com</a>
+            </h2>
             <br>
             <br>
             <img class="img-responsive cp_logo" src="./img/cp.png" alt="">
+            <br>
+            <br>
+            <h2 class="codeplay_subtitle"> For more details, here is the brochure.</h2>
+            <button>
+                <a href="./brochure.pdf">Codeplay brochure</a>
+            </button>
         </div>
         </div>
     </div>
@@ -752,8 +761,8 @@ setInterval(function() {
 </footer>   
 
 </div>
-    </div>   
-   
+    </div>
+    <script src="scripts/ScrollMagic.min.js"></script>
     <script src="scripts/shine.min.js"></script>
     <script src="scripts/cbpGridGallery.js"></script>
     <script src="scripts/classie.js"></script>

@@ -17,6 +17,10 @@ body, html {
   background: #fff;
   height: 1.5px; }
 
+h1, h2, h3{
+  cursor: crosshair;
+}
+
 /*===============
 *LOADER
 =================*/
@@ -297,7 +301,9 @@ body, html {
     font-family: Lato_light;
     text-align: left;
     font-size: 55px;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    padding-top: 60px;
+  }
     #projects h2 span {
       font-family: Lato_semibold; }
     #projects h2 span:hover {
@@ -608,17 +614,31 @@ body, html {
 *CODEPLAY
 =======================*/
 #codeplay {
-  height: 90vh;
   position: relative;
   background: #fff;
+  background-image: url("../img/Line.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  padding:20px 0 20px 0;}
+  padding:20px 0 60px 0;}
+
+  #codeplay .codeplay_title{
+    font-size:3em;
+    padding:40px 0 0 0;
+  }
+
+  #codeplay .codeplay_subtitle{
+    font-size:1.3em;
+    font-family: Lato_thin;
+  }
 
   #codeplay :after {
     opacity: 0.5; }
+
   #codeplay img {
     width: 40%;
     height: auto;
@@ -642,11 +662,12 @@ body, html {
     font-family: Lato_semibold;
     color: #fff; }
   .cp_head h1{
+    font-size: 1.5em;
     padding: 30px 0 10px 0;
-    color: #74ddf4;
+    color: #000;
   }
   .cp_head h4{
-    color: #2b669a;
+    color: #000;
   }
   img .cp_logo{
 
@@ -756,9 +777,6 @@ hr{
     animation: disco 0.3s ease-in-out infinite; }
 
 
-
-
-
 .csi_type img {
   width: 16%;
   height: auto;
@@ -824,17 +842,17 @@ hr{
 
 .hamburger.is-closed .hamb-top {
   -webkit-transition: all 0.35s ease-in-out;
-  background-color: #5bc0de;
+  background-color: #1a1a1a;
   top: 5px; }
 
 .hamburger.is-closed .hamb-middle {
-  background-color: #5bc0de;
+  background-color: #1a1a1a;
   margin-top: -2px;
   top: 50%; }
 
 .hamburger.is-closed .hamb-bottom {
   -webkit-transition: all 0.35s ease-in-out;
-  background-color: #5bc0de;
+  background-color: #1a1a1a;
   bottom: 5px; }
 
 .hamburger.is-closed .hamb-top,
@@ -851,18 +869,18 @@ hr{
 .hamburger.is-open .hamb-top {
   -webkit-transform: rotate(45deg);
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
-  background-color: #2b669a;
+  background-color: #1a1a1a;
   margin-top: -2px;
   top: 50%; }
 
 .hamburger.is-open .hamb-middle {
-  background-color: #2b669a;
+  background-color: #1a1a1a;
   display: none; }
 
 .hamburger.is-open .hamb-bottom {
   -webkit-transform: rotate(-45deg);
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
-  background-color: #2b669a;
+  background-color: #1a1a1a;
   margin-top: -2px;
   top: 50%; }
 
@@ -962,6 +980,7 @@ OFF CANVAS
   display: none; }
 
 #page-content-wrapper {
+  position: relative;
   width: 100%; }
 
 .overlay {
