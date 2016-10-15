@@ -1204,3 +1204,7 @@ a:hover, a:active, a:focus{
 .member{
   padding: 10px 45px 10px 45px;
 }
+
+.shine-word{
+    font-family:Lato_bold;
+}
