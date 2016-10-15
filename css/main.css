@@ -39,7 +39,7 @@ h1, h2, h3{
   top: 50%;
   width: 150px;
   height: 150px;
-  z-index: 1001; }
+  z-index: 100000; }
   #loader .container {
     position: absolute;
     width: 120px;
@@ -51,14 +51,14 @@ h1, h2, h3{
     position: absolute;
     transform-origin: center; }
   #loader .square {
-    background: #75B3D1;
+    background: #283769;
     width: 24px;
     height: 24px;
     transform: scale(0);
     animation: shrinkgrow 3s ease-in-out infinite;
     animation-delay: 2s; }
   #loader .circle {
-    background: #ffff00;
+    background: #283769;
     width: 27px;
     height: 27px;
     border-radius: 50%;
@@ -69,7 +69,7 @@ h1, h2, h3{
     height: 0;
     border-style: solid;
     border-width: 0 14.5px 25.1px 14.5px;
-    border-color: transparent transparent #f76969 transparent;
+    border-color: transparent transparent #283769 transparent;
     transform: scale(0);
     animation: shrinkgrow 3s ease-in-out infinite;
     animation-delay: 1s; }
@@ -92,7 +92,7 @@ h1, h2, h3{
   width: 51%;
   height: 100%;
   background: #fff;
-  z-index: 1000;
+  z-index: 5000;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0); }
@@ -135,7 +135,7 @@ h1, h2, h3{
 *BACKGROUND
 =================================================*/
 .bg-main {
-  background: #A5EAFF;
+  background: #283769;
   position: fixed;
   top: 0;
   right: 0;
@@ -345,7 +345,7 @@ h1, h2, h3{
     opacity: 0.7; }
   #projects .grid figcaption {
     color: #041182;
-    background: #b6f2ff;
+    background: #9fa9d0;
     padding: 25px; }
   #projects .slideshow {
     position: fixed;
@@ -624,7 +624,7 @@ h1, h2, h3{
   right: 0;
   bottom: 0;
   left: 0;
-  padding:20px 0 60px 0;}
+  padding:40px 0 120px 0;}
 
   #codeplay .codeplay_title{
     font-size:3em;
@@ -672,7 +672,24 @@ h1, h2, h3{
   img .cp_logo{
 
   }
-
+  .cp_button{
+    padding:10px;
+    background: #1a1a1a;
+    color: #fff;
+    border: 1px solid #1a1a1a;
+    transition: all 0.6s ease-in;
+  }
+  .cp_button:hover{
+    background: #fff;
+    color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+  }
+  .cp_button a{
+       color: #fff;
+     }
+.cp_button a:hover{
+  color: #1a1a1a;
+}
 /*=======================
 *PROFILE
 =======================*/
@@ -708,6 +725,15 @@ h1, h2, h3{
   width: 100%;
 }
 
+.member{
+  transition: all 0.2s ease-in;
+}
+
+.member:hover{
+  opacity: 0.9;
+}
+
+
 
 
 hr{
@@ -715,7 +741,6 @@ hr{
 }
 #profile {
   position: relative;
-  padding-left: 6%;
   padding-top: 10%;
   padding-bottom: 10%;
   color: #3597d3;
@@ -730,6 +755,18 @@ hr{
       width: 30%;
     } 
     */ }
+.carousel-control.left{
+   background-image: none;
+   position: absolute;
+   top:360px;
+   font-size:30px;
+ }
+.carousel-control.right{
+  background-image: none;
+  position: absolute;
+  top:360px;
+  font-size:30px;
+}
   #profile ul {
     list-style: none;
     font-family: Lato_thinitalic;
@@ -803,7 +840,7 @@ hr{
   position: fixed;
   top: 20px;
   width: 32px;
-  z-index: 4999; }
+  z-index: 1000; }
 
 .hamburger:hover {
   outline: none; }
@@ -842,17 +879,17 @@ hr{
 
 .hamburger.is-closed .hamb-top {
   -webkit-transition: all 0.35s ease-in-out;
-  background-color: #1a1a1a;
+  background-color: #969292;
   top: 5px; }
 
 .hamburger.is-closed .hamb-middle {
-  background-color: #1a1a1a;
+  background-color: #969292;
   margin-top: -2px;
   top: 50%; }
 
 .hamburger.is-closed .hamb-bottom {
   -webkit-transition: all 0.35s ease-in-out;
-  background-color: #1a1a1a;
+  background-color: #969292;
   bottom: 5px; }
 
 .hamburger.is-closed .hamb-top,
@@ -935,11 +972,13 @@ hr{
   left: 30px; }
 
 #sidebar-wrapper .nav > li > a {
-  font-family: Lato_semibold; }
+  font-family: Lato_semibold;
+  color: #fff;
+}
 
 #sidebar-wrapper .nav > li > a:hover, #sidebar-wrapper .nav > li > a:focus {
   background-color: transparent;
-  color: #fff;
+  color: #cbfbff;
   transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1); }
 
 /*=======================
@@ -1155,4 +1194,13 @@ a:hover, a:active, a:focus{
     color: #1a1a1a;
     font-size: 0.9em;
   }
+}
+
+.thumbnail{
+  background-color: transparent;
+  border:none;
+}
+
+.member{
+  padding: 10px 45px 10px 45px;
 }
