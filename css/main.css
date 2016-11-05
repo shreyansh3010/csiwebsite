@@ -514,7 +514,6 @@ h1, h2, h3{
 =======================*/
 #collaboration {
   color: #fff;
-  height: 500px;
   font-family: Lato_thin; }
   #collaboration .collab_padding {
     padding: 150px 0 150px 0; }
@@ -1207,4 +1206,35 @@ a:hover, a:active, a:focus{
 
 .shine-word{
     font-family:Lato_bold;
+}
+
+.registernow{
+  font-family: Lato_light;
+}
+
+.slacksubmit{
+  border-radius: 20px;
+  border: none;
+  padding: 5px 30px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.slacksubmit:hover{
+  background: #fff;
+  color: #1a1a1a;
+}
+
+.slackmail{
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  width: 50%;
+}
+
+.slackmail:hover{
+  border-bottom: 2px solid #fff;
+}
+
+.typeset_anchor:hover{
+  color: #fff;
 }
